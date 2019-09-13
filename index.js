@@ -9,7 +9,6 @@ function destructivelyUpdateDriverWithKeyAndValue(driver, key, val){
     return driver;
 }
 
-const driverDup = {}
 
 function deleteFromDriverByKey(driver, key){
     driverDup = Object.assign({}, driver);
