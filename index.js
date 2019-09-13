@@ -1,5 +1,4 @@
 const driver = {}
-const driverDup = {}
 
 function updateDriverWithKeyAndValue(driver, key, val){
     return {...driver, [key]: val};
@@ -9,6 +8,8 @@ function destructivelyUpdateDriverWithKeyAndValue(driver, key, val){
     driver[key] = val;
     return driver;
 }
+
+const driverDup = {}
 
 function deleteFromDriverByKey(driver, key){
     driverDup = Object.assign({}, driver);
