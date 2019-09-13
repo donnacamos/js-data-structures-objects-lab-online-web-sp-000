@@ -1,4 +1,5 @@
 const driver = {}
+const driverDup = {}
 
 function updateDriverWithKeyAndValue(driver, key, val){
     return {...driver, [key]: val};
